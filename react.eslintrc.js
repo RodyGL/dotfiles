@@ -1,10 +1,11 @@
 /**
- * npm install -E -D eslint eslint-config-airbnb-typescript eslint-config-prettier eslint-plugin-eslint-comments eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-prettier eslint-plugin-promise eslint-plugin-react eslint-plugin-react-hooks prettier @typescript-eslint/eslint-plugin typescript
+ * npm install -D eslint eslint-config-airbnb eslint-config-airbnb-typescript eslint-config-prettier eslint-plugin-eslint-comments eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-prettier eslint-plugin-promise eslint-plugin-react eslint-plugin-react-hooks prettier @typescript-eslint/parser @typescript-eslint/eslint-plugin typescript
  */
 
-module.exports = {
+ module.exports = {
   plugins: ['@typescript-eslint', 'eslint-comments', 'promise', 'prettier'],
   extends: [
+    'airbnb',
     'airbnb-typescript',
     'airbnb/hooks',
     'plugin:@typescript-eslint/recommended',
